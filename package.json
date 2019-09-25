@@ -1,0 +1,22 @@
+{
+  "name": "nextjs-zone-home",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf .next/",
+    "dev": "next -p 3001",
+    "build": "npm run clean && next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "isomorphic-unfetch": "3.0.0",
+    "next": "9.0.6",
+    "nextjs-app-shell": "github:syntactic-salt/nextjs-app-shell#6852fac",
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
+  }
+}
