@@ -6,6 +6,4 @@ const About = () => {
     );
 };
 
-About.getInitialProps = async function() { return {}; };
-
 export default About;
