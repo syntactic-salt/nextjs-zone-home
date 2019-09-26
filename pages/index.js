@@ -7,13 +7,10 @@ const Index = (props) => (
         <h1>Batman TV Shows</h1>
         <ul>
             {
-                props.shows.map((show, index) => {
-                    const year = `201${index}`;
-                    const month = `0${index + 1}`.substring(0, 2);
-
+                props.shows.map((show) => {
                     return (
                         <li key={show.id}>
-                            <Link href="/[year]/[month]/[showID]" as={`/${year}/${month}/${show.id}`}>
+                            <Link href="/shows/[showID]" as={`/shows/${show.id}`}>
                                 <a>{show.name}</a>
                             </Link>
                         </li>
