@@ -4,6 +4,8 @@ const url = require('url');
 const server = awsServerlessExpress.createServer((req, res) => {
     const parsedURL = url.parse(req.url);
 
+    res.setHeader('Cache-Control', 'no-cache');
+
     if (parsedURL.pathname === '/') {
         require('./pages/index').render(req, res);
     } else {
